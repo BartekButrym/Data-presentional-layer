@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background: #c4d3f6;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        width: 90%;
+        max-width: 700px;
+        margin-top: 2rem;
+    }
+    
+    .userInput {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        color: #6c7ae0;
+        margin-bottom: 15px;
+    }
+    
+    .myForm {
+        width: 100px;
+        margin-bottom: 15px;
+    }
+    
+    input[type='text'] {
+        width: 100%;
+        padding: 10px 10px;
+        outline: none;
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        color: #4e4e4e;
+    }
+    
+    input[type='text']:focus {
+        border-color: #6c7ae0;
+    }
+    
+    .addButton {
+        display: block;
+        width: 100px;
+        height: 45px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-radius: 3px;
+        background: #6c7ae0;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .hover {
+        animation: bump .2s ease;
+    }
+    
+    @keyframes bump {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .addIcon {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .data ul:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .data ul {
+        background: #fff;
+        border-bottom: 1px solid #e2e2e2;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .data ul:nth-child(even) {
+        background: #f5f5f5;
+    }
+    
+    .data ul:hover {
+        background: #ececff;
+    }
+    
+    .data ul:hover li {
+        color: #283abe;
+    }
+    
+    .data li {
+        line-height: 65px;
+        height: 60px;
+        color: #666;
+        text-align: left;
+        font-size: 1.1rem;
+        padding-left: 50px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .data li:last-child {
+        margin-bottom: 0;
+    }
+
+    .data li::before {
+        position: absolute;
+        top: -25px;
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 700;
+        color: #777;
+    }
+
+    .data li:nth-child(2)::before {
+        content: 'imię i nazwisko';
+    }
+
+    .data li:nth-child(3)::before {
+        content: 'numer telefonu';
+    }
+
+    .data li:nth-child(4)::before {
+        content: 'wiek';
+    }
+
+    .data ul:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+
+
+}
+
+
